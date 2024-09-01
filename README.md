@@ -6,3 +6,7 @@ HOMEWORK:
 4. SET UP CANVAS AND BACKGROUND COLOR
 EXTRA CREDIT:
 TWO SQUARES
+
+9/1 - Add variable for Y
+
+Make square move up, down, left and right. 
