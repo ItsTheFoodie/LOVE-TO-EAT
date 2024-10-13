@@ -39,19 +39,20 @@
                 }else if(key ==="w"){
                     y -= 9
                 }else if(key ==="s"){
-                y += 9
+                    y += 9
                 }else if (keyCode === UP_ARROW) {
-                y2 -= 9;
+                    y2 -= 9;
                 } else if (keyCode === DOWN_ARROW) {
-                y2 += 9;
+                    y2 += 9;
                 } else if (keyCode === LEFT_ARROW) {
-                x2 -= 9;
-                 } else if (keyCode === RIGHT_ARROW) {
-                x2 += 9;
-    }
+                    x2 -= 9;
+                } else if (keyCode === RIGHT_ARROW) {
+                    x2 += 9;
+                }
+             } //fOUND BUG!! keyPressed function's closing } was at the bottom, which meant newCircle and setInterval were called only when the keys were pressed.
   
     function newCircle(){
-        console.log("new circle NOW!");
+        console.log("new circle NOW: " + window.Date.now);
         x3 = random(windowWidth);
         y3 = random(windowHeight);
         r = random(255);
@@ -61,7 +62,7 @@
 
     setInterval(newCircle, 9000);
             
-        }
+    
         </script>
     </body>
 
