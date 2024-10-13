@@ -26,27 +26,28 @@
                 fill(0);
                 square(x,y,87);
                 square(x2,y2,87);
+                noStroke();
                 fill("yellow");
                 circle(x3,y3,70);
              }
 
              function keyPressed(){
                 if(key ==="d"){
-                    x += 4
+                    x += 9
                 }else if(key ==="a"){
-                    x -= 4
+                    x -= 9
                 }else if(key ==="w"){
-                    y -= 4
+                    y -= 9
                 }else if(key ==="s"){
-                y += 4
+                y += 9
                 }else if (keyCode === UP_ARROW) {
-                y2 -= 1;
+                y2 -= 9;
                 } else if (keyCode === DOWN_ARROW) {
-                y2 += 1;
+                y2 += 9;
                 } else if (keyCode === LEFT_ARROW) {
-                x2 -= 1;
+                x2 -= 9;
                  } else if (keyCode === RIGHT_ARROW) {
-                x2 += 1;
+                x2 += 9;
     }
   
     function newCircle(){
@@ -57,7 +58,7 @@
         b = random(255);
     }
 
-    setInterval(newCircle, 1000);
+    setInterval(newCircle, 5000);
             
         }
         </script>
