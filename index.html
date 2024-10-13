@@ -53,7 +53,7 @@
              // FOUND BUG!! keyPressed function's closing } was at the bottom, which meant newCircle and setInterval were called only when the keys were pressed.
   
     function newCircle(){
-        console.log("new circle NOW: " + window.Date.now);
+        console.log("new circle NOW: " + new Date().toLocaleTimeString());
         x3 = random(windowWidth);
         y3 = random(windowHeight);
         r = random(255);
