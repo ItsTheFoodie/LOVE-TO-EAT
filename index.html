@@ -12,17 +12,22 @@
             let y = 0;
             let x2;
             let y2;
+            let y3;
+            let x3;
              function setup(){
                 createCanvas(windowWidth,windowHeight);
                 x2 = windowWidth - 87;
                 y2 = windowHeight - 87;
+                x3 = random(windowWidth);
+                y3 = random(windowHeight);
              }
              function draw(){
                 background(138,254,164);
                 fill(0);
                 square(x,y,87);
                 square(x2,y2,87);
-
+                fill(yellow);
+                circle(y3,x3,70);
              }
 
              function keyPressed(){
@@ -44,7 +49,15 @@
                 x2 += 1;
     }
   
+    function newCircle(){
+        x3 = random(windowWidth);
+        y3 = random(windowHeight);
+        r = random(255);
+        g = random(255);
+        b = random(255);
+    }
 
+    setInterval(newCircle, 1000);
             
         }
         </script>
