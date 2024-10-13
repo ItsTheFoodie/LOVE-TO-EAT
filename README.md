@@ -1,12 +1,6 @@
 # LOVE-TO-EAT
-HOMEWORK:
-1.CREATE INDEX.HTML
-2.IN INDEX.HTML ADD HTML BOILER PLATE
-3.LINK P5.JS SCRIPT
-4. SET UP CANVAS AND BACKGROUND COLOR
-EXTRA CREDIT:
-TWO SQUARES
-
-9/1 - Add variable for Y
-
-Make square move up, down, left and right. 
+HOMEWORK Due 10/20:
+[ ] Create a variable for player 1 and player 2 score
+[ ] Set scores to 0
+[ ] Add a text element to the canvas to display p1 and p2 scores
+[ ] Ideally--- player 1 score is in top left, p2 score in top right (or splitting center?)
