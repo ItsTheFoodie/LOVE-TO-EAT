@@ -49,7 +49,8 @@
                 } else if (keyCode === RIGHT_ARROW) {
                     x2 += 9;
                 }
-             } //fOUND BUG!! keyPressed function's closing } was at the bottom, which meant newCircle and setInterval were called only when the keys were pressed.
+             } 
+             // FOUND BUG!! keyPressed function's closing } was at the bottom, which meant newCircle and setInterval were called only when the keys were pressed.
   
     function newCircle(){
         console.log("new circle NOW: " + window.Date.now);
