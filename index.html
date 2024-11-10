@@ -14,18 +14,24 @@
             let y2;
             let y3;
             let x3;
-             function setup(){
-                console.log
-                createCanvas(windowWidth-88,windowHeight-88);
+
+            
+            function setup(){
+                console.log("MERGE TEST")
+                createCanvas(windowWidth-100,windowHeight-100);
                 x2 = windowWidth - 187;
                 y2 = windowHeight - 187;
                 x3 = random(windowWidth);
                 y3 = random(windowHeight);
-             }
-             function draw(){
+            }
+            
+            function draw(){
                 background(138,254,164);
+                fill("blue");
                 text('Score', 95, 95);
-                fill(0);
+              
+                fill(200,162,200);
+                text ('score:',100,96);
                 square(x,y,87);
                 fill(79,66,181);
                 square(x2,y2,87);
